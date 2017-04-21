@@ -1,0 +1,13 @@
+SET autocommit = 0;
+
+SELECT
+    cruncherID
+FROM
+    voices_dev.crunchers
+WHERE
+    cruncherID = 6 FOR UPDATE;
+
+UPDATE voices_dev.crunchers
+SET cruncherID = 6
+WHERE
+    cruncherID = 6;
